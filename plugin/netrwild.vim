@@ -37,11 +37,11 @@ if !exists('g:netrw_altfile')
 endif	
 
 
-command!                         NetrwSidebar   :call netrw_sidebar#open_at('./')
-command! -nargs=1 -complete=file NetrwSidebarAt :call netrw_sidebar#open_at(<args>)
+command!                         NetrwSidebar   :call netrwild#open_at('./')
+command! -nargs=1 -complete=file NetrwSidebarAt :call netrwild#open_at(<args>)
 
-command! NetrwSidebarClose  :call netrw_sidebar#close()
-command! NetrwSidebarToggle :call netrw_sidebar#toggle()
+command! NetrwSidebarClose  :call netrwild#close()
+command! NetrwSidebarToggle :call netrwild#toggle()
 
 
 let &cpo = s:save_cpo
