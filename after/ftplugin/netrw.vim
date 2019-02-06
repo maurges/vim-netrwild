@@ -13,9 +13,5 @@ nmap <buffer> <silent> B :Ntree<CR>
 "try to cd to directory/file under cursor
 nmap <buffer> C :<C-U>call netrwild#change_dir()<CR>
 
-"disable (slow) incsearch
-nnoremap <buffer> / /
-nnoremap <buffer> ? ?
 "copy full path
 nnoremap <buffer> <silent> yy :call netrwild#copy_path()<CR>
-
